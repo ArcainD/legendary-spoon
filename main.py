@@ -1,5 +1,4 @@
 import requests
-from pprint import pprint
 
 
 def intell_request(name, token):
@@ -11,7 +10,7 @@ def intell_request(name, token):
 
 
 if __name__ == '__main__':
-    names = ['Hulk', 'Captain America', 'Thanos','Vision']
+    names = ['Hulk', 'Captain America', 'Thanos']
     list_intell = []
     for name in names:
         intelligence = intell_request(name, '2619421814940190')
@@ -30,4 +29,3 @@ if __name__ == '__main__':
     elif len(list_intell) > 1:
         print('Умнейшие супергерои:')
         print(*[x[0] for x in list_intell], sep=', ', end='.')
-
