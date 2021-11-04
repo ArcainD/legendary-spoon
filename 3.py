@@ -30,7 +30,7 @@ def questions(data, list_responses):
 
 if __name__ == '__main__':
     page_num = 1
-    fromdate = '2021-11-01'      # в формате yyyy-mm-dd hh:mm:ss
+    fromdate = '2021-11-01'      # в формате yyyy-mm-dd hh:mm:ss время сервера -03:00 относительно МСК
     todate = '2021-11-03'        # в формате yyyy-mm-dd hh:mm:ss
     tag = 'python'
     has_more = True
@@ -41,3 +41,5 @@ if __name__ == '__main__':
         time.sleep(0.2)
         page_num += 1
     pprint(list_responses)
+# Чуть поэксперементировал и сервер забанил меня на сутки, но данный код полностью работоспособен
+
