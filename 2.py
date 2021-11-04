@@ -30,8 +30,8 @@ class YaUploader:
 
 
 if __name__ == '__main__':
-    # path_to_file =                          # Ввести путь к файлу
-    # filename =                              # Ввести название файла
-    # token =                                 # Ввести токен к я.диску
+    path_to_file =                          # Ввести путь к файлу
+    filename =                              # Ввести название файла
+    token =                                 # Ввести токен к я.диску
     uploader = YaUploader(token)
     result = uploader.upload(path_to_file, filename)
